@@ -1403,6 +1403,162 @@ export {
   type RegistryScanResult
 } from './package-registry-scanner'
 
+// Message Deduplication (NEW) - Mechanism #148
+export {
+  MessageDeduplicator,
+  getMessageDeduplicator,
+  isDuplicate,
+  deduplicate,
+  deduplicateBatch,
+  getDeduplicationStats,
+  type AgentMessage,
+  type MessageType,
+  type DeduplicationConfig,
+  type DuplicateMessage,
+  type DeduplicationResult,
+  type MessageStats,
+  type MessageCache
+} from './message-deduplication'
+
+// Context Deduplication (NEW) - Mechanism #36
+export {
+  ContextDeduplicator,
+  getContextDeduplicator,
+  deduplicateContext,
+  dedupContext,
+  getContextDeduplicationStats,
+  createContextItem,
+  type ContextItem,
+  type ContextType,
+  type ContextDeduplicationConfig,
+  type DeduplicationReport,
+  type RemovedItem,
+  type DeduplicationReason,
+  type DeduplicationStats
+} from './context-deduplication'
+
+// Code Fingerprint Generator (NEW) - Mechanism #240
+export {
+  CodeFingerprintGenerator,
+  getCodeFingerprintGenerator,
+  generateFingerprint,
+  compareCode,
+  isDuplicateCode,
+  getFingerprintStats,
+  type CodeFingerprint,
+  type FingerprintType,
+  type FingerprintMetrics,
+  type CodeFeatures,
+  type FingerprintConfig,
+  type FingerprintMatch,
+  type FingerprintStats
+} from './code-fingerprint'
+
+// Dependency Abandonment Detection (NEW) - Mechanism #454
+export {
+  DependencyAbandonmentDetector,
+  getDependencyAbandonmentDetector,
+  isPackageAbandoned,
+  analyzePackage,
+  getPackageRiskScore,
+  generateAbandonmentReport,
+  getAbandonmentStats,
+  type PackageInfo,
+  type DownloadStats,
+  type AbandonmentAnalysis,
+  type RiskLevel,
+  type AbandonmentSignal,
+  type SignalType,
+  type Recommendation,
+  type AlternativePackage,
+  type AnalysisDetails,
+  type AbandonmentConfig,
+  type AbandonmentStats
+} from './dependency-abandonment'
+
+// Architecture Pattern Detector (NEW) - Mechanisms #361-370
+export {
+  ArchitecturePatternDetector,
+  getArchitecturePatternDetector,
+  detectArchitecturePattern,
+  getPatternDetectionStats,
+  addArchitecturePattern,
+  type ArchitecturePattern,
+  type PatternType,
+  type ComponentInfo,
+  type ComponentType,
+  type ConnectionInfo,
+  type ConnectionType,
+  type PatternIndicator,
+  type IndicatorType,
+  type PatternMetadata,
+  type DetectionConfig,
+  type PatternRule,
+  type IndicatorRule,
+  type DetectionResult,
+  type PatternRecommendation,
+  type DetectionStats
+} from './architecture-patterns'
+
+// Dead-End Detection (NEW) - Mechanism #89
+export {
+  DeadEndDetector,
+  getDeadEndDetector,
+  startReasoningPath,
+  addReasoningStep,
+  isDeadEnd,
+  detectDeadEnd,
+  getDeadEndDetectionStats,
+  type ReasoningPath,
+  type PathStatus,
+  type ReasoningStep,
+  type DeadEnd,
+  type DeadEndType,
+  type RecoveryOption,
+  type RecoveryType,
+  type DetectionConfig,
+  type DetectionResult,
+  type DetectionStats
+} from './dead-end-detection'
+
+// Self-Verification System (NEW) - Mechanism #84
+export {
+  SelfVerificationSystem,
+  getSelfVerificationSystem,
+  type VerificationContext,
+  type VerificationType,
+  type VerificationStatus,
+  type VerificationConstraint,
+  type ConstraintType,
+  type VerificationAttempt,
+  type VerificationIssue,
+  type VerificationResult,
+  type VerificationStats
+} from './self-verification'
+
+// Recovery Strategy Generator (NEW) - Mechanism #210
+export {
+  RecoveryStrategyGenerator,
+  getRecoveryStrategyGenerator,
+  generateRecoveryStrategy,
+  generateRecoveryOptions,
+  executeRecoveryStrategy,
+  createRecoveryContext,
+  getRecoveryStats,
+  type RecoveryContext,
+  type ErrorInfo,
+  type ErrorType,
+  type SystemState,
+  type ResourceStatus,
+  type ActionHistoryItem,
+  type RecoveryStrategy,
+  type StrategyType,
+  type RecoveryStep,
+  type RecoveryConstraint,
+  type RecoveryResult,
+  type RecoveryStats
+} from './recovery-strategies'
+
 /**
  * Initialize all autonomous subsystems
  */
