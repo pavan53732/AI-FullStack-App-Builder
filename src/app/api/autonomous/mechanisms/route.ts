@@ -169,6 +169,47 @@ const MECHANISM_CATEGORIES = {
     name: 'Agent Recovery',
     description: 'Agent failure detection and recovery',
     modules: ['agent-recovery']
+  },
+  // Quick Win Mechanisms (NEW - 8 Critical Features)
+  message_deduplication: {
+    name: 'Message Deduplication',
+    description: 'Prevent duplicate messages between agents with content hashing and semantic similarity',
+    modules: ['message-deduplication']
+  },
+  context_deduplication: {
+    name: 'Context Deduplication',
+    description: 'Remove duplicate context items to optimize token usage',
+    modules: ['context-deduplication']
+  },
+  code_fingerprint: {
+    name: 'Code Fingerprint Generator',
+    description: 'Generate unique fingerprints for code blocks for duplicate detection',
+    modules: ['code-fingerprint']
+  },
+  dependency_abandonment: {
+    name: 'Dependency Abandonment Detection',
+    description: 'Detect abandoned, deprecated, and unmaintained npm packages',
+    modules: ['dependency-abandonment']
+  },
+  architecture_patterns: {
+    name: 'Architecture Pattern Detector',
+    description: 'Detect architecture patterns: microservices, monolith, CQRS, DDD, etc.',
+    modules: ['architecture-patterns']
+  },
+  dead_end_detection: {
+    name: 'Dead-End Detection',
+    description: 'Detect unproductive reasoning paths and infinite loops',
+    modules: ['dead-end-detection']
+  },
+  self_verification: {
+    name: 'Self-Verification Loops',
+    description: 'Verify AI outputs with constraint checking and confidence scoring',
+    modules: ['self-verification']
+  },
+  recovery_strategies: {
+    name: 'Recovery Strategy Generator',
+    description: 'Generate recovery strategies when errors or failures occur',
+    modules: ['recovery-strategies']
   }
 }
 
@@ -264,6 +305,50 @@ const API_ACTIONS: Record<string, Function> = {
   'parse_code': Autonomous.parseCode,
   'create_sandbox': Autonomous.createSandbox,
   'analyze_quality': Autonomous.analyzeQuality,
+  
+  // Quick Win Mechanisms (NEW - 8 Critical Features)
+  // Mechanism #148: Message Deduplication
+  'is_duplicate_message': Autonomous.isDuplicate,
+  'deduplicate_messages': Autonomous.deduplicate,
+  'deduplicate_message_batch': Autonomous.deduplicateBatch,
+  'get_message_deduplication_stats': Autonomous.getDeduplicationStats,
+  
+  // Mechanism #36: Context Deduplication
+  'deduplicate_context': Autonomous.deduplicateContext,
+  'dedup_context_quick': Autonomous.dedupContext,
+  'get_context_deduplication_stats': Autonomous.getContextDeduplicationStats,
+  
+  // Mechanism #240: Code Fingerprint Generator
+  'generate_fingerprint': Autonomous.generateFingerprint,
+  'compare_code': Autonomous.compareCode,
+  'is_duplicate_code': Autonomous.isDuplicateCode,
+  'get_fingerprint_stats': Autonomous.getFingerprintStats,
+  
+  // Mechanism #454: Dependency Abandonment Detection
+  'is_package_abandoned': Autonomous.isPackageAbandoned,
+  'analyze_package_abandonment': Autonomous.analyzePackage,
+  'get_package_risk_score': Autonomous.getPackageRiskScore,
+  'generate_abandonment_report': Autonomous.generateAbandonmentReport,
+  
+  // Mechanism #361-370: Architecture Pattern Detector
+  'detect_architecture_pattern': Autonomous.detectArchitecturePattern,
+  'get_pattern_detection_stats': Autonomous.getPatternDetectionStats,
+  'add_architecture_pattern': Autonomous.addArchitecturePattern,
+  
+  // Mechanism #89: Dead-End Detection
+  'start_reasoning_path': Autonomous.startReasoningPath,
+  'add_reasoning_step': Autonomous.addReasoningStep,
+  'detect_dead_end': Autonomous.detectDeadEnd,
+  'get_dead_end_stats': Autonomous.getDeadEndDetectionStats,
+  
+  // Mechanism #84: Self-Verification Loops
+  'get_self_verification_system': Autonomous.getSelfVerificationSystem,
+  
+  // Mechanism #210: Recovery Strategy Generator
+  'generate_recovery_strategy': Autonomous.generateRecoveryStrategy,
+  'generate_recovery_options': Autonomous.generateRecoveryOptions,
+  'create_recovery_context': Autonomous.createRecoveryContext,
+  'get_recovery_stats': Autonomous.getRecoveryStats,
   
   // System Status
   'get_system_status': Autonomous.getSystemStatus,

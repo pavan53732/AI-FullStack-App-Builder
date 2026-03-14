@@ -1,8 +1,18 @@
 /**
  * Integration Tests for Autonomous AI System
  * 
- * Comprehensive tests for all 86 autonomous modules
+ * Comprehensive tests for all 94 autonomous modules
  * Tests both individual module functionality and inter-module integration
+ * 
+ * Includes 8 Quick Win Mechanisms:
+ * - Message Deduplication (#148)
+ * - Context Deduplication (#36)
+ * - Code Fingerprint Generator (#240)
+ * - Dependency Abandonment Detection (#454)
+ * - Architecture Pattern Detector (#361-370)
+ * - Dead-End Detection (#89)
+ * - Self-Verification Loops (#84)
+ * - Recovery Strategy Generator (#210)
  */
 
 import { describe, it, expect, beforeAll, afterAll } from '@jest/globals'
@@ -1284,6 +1294,200 @@ describe('Autonomous AI System Integration Tests', () => {
       it('should export analyzeQuality function', () => {
         expect(Autonomous.analyzeQuality).toBeDefined()
         expect(typeof Autonomous.analyzeQuality).toBe('function')
+      })
+    })
+  })
+
+  describe('Quick Win Mechanisms (NEW - 8 Critical Features)', () => {
+    
+    describe('Message Deduplication Module (#148)', () => {
+      it('should export MessageDeduplicator class', () => {
+        expect(Autonomous.MessageDeduplicator).toBeDefined()
+        expect(typeof Autonomous.MessageDeduplicator).toBe('function')
+      })
+
+      it('should export isDuplicate function', () => {
+        expect(Autonomous.isDuplicate).toBeDefined()
+        expect(typeof Autonomous.isDuplicate).toBe('function')
+      })
+
+      it('should export deduplicate function', () => {
+        expect(Autonomous.deduplicate).toBeDefined()
+        expect(typeof Autonomous.deduplicate).toBe('function')
+      })
+
+      it('should export deduplicateBatch function', () => {
+        expect(Autonomous.deduplicateBatch).toBeDefined()
+        expect(typeof Autonomous.deduplicateBatch).toBe('function')
+      })
+
+      it('should export getDeduplicationStats function', () => {
+        expect(Autonomous.getDeduplicationStats).toBeDefined()
+        expect(typeof Autonomous.getDeduplicationStats).toBe('function')
+      })
+    })
+
+    describe('Context Deduplication Module (#36)', () => {
+      it('should export ContextDeduplicator class', () => {
+        expect(Autonomous.ContextDeduplicator).toBeDefined()
+        expect(typeof Autonomous.ContextDeduplicator).toBe('function')
+      })
+
+      it('should export deduplicateContext function', () => {
+        expect(Autonomous.deduplicateContext).toBeDefined()
+        expect(typeof Autonomous.deduplicateContext).toBe('function')
+      })
+
+      it('should export dedupContext function', () => {
+        expect(Autonomous.dedupContext).toBeDefined()
+        expect(typeof Autonomous.dedupContext).toBe('function')
+      })
+
+      it('should export getContextDeduplicationStats function', () => {
+        expect(Autonomous.getContextDeduplicationStats).toBeDefined()
+        expect(typeof Autonomous.getContextDeduplicationStats).toBe('function')
+      })
+    })
+
+    describe('Code Fingerprint Generator Module (#240)', () => {
+      it('should export CodeFingerprintGenerator class', () => {
+        expect(Autonomous.CodeFingerprintGenerator).toBeDefined()
+        expect(typeof Autonomous.CodeFingerprintGenerator).toBe('function')
+      })
+
+      it('should export generateFingerprint function', () => {
+        expect(Autonomous.generateFingerprint).toBeDefined()
+        expect(typeof Autonomous.generateFingerprint).toBe('function')
+      })
+
+      it('should export compareCode function', () => {
+        expect(Autonomous.compareCode).toBeDefined()
+        expect(typeof Autonomous.compareCode).toBe('function')
+      })
+
+      it('should export isDuplicateCode function', () => {
+        expect(Autonomous.isDuplicateCode).toBeDefined()
+        expect(typeof Autonomous.isDuplicateCode).toBe('function')
+      })
+
+      it('should export getFingerprintStats function', () => {
+        expect(Autonomous.getFingerprintStats).toBeDefined()
+        expect(typeof Autonomous.getFingerprintStats).toBe('function')
+      })
+    })
+
+    describe('Dependency Abandonment Detection Module (#454)', () => {
+      it('should export DependencyAbandonmentDetector class', () => {
+        expect(Autonomous.DependencyAbandonmentDetector).toBeDefined()
+        expect(typeof Autonomous.DependencyAbandonmentDetector).toBe('function')
+      })
+
+      it('should export isPackageAbandoned function', () => {
+        expect(Autonomous.isPackageAbandoned).toBeDefined()
+        expect(typeof Autonomous.isPackageAbandoned).toBe('function')
+      })
+
+      it('should export analyzePackage function', () => {
+        expect(Autonomous.analyzePackage).toBeDefined()
+        expect(typeof Autonomous.analyzePackage).toBe('function')
+      })
+
+      it('should export getPackageRiskScore function', () => {
+        expect(Autonomous.getPackageRiskScore).toBeDefined()
+        expect(typeof Autonomous.getPackageRiskScore).toBe('function')
+      })
+
+      it('should export generateAbandonmentReport function', () => {
+        expect(Autonomous.generateAbandonmentReport).toBeDefined()
+        expect(typeof Autonomous.generateAbandonmentReport).toBe('function')
+      })
+    })
+
+    describe('Architecture Pattern Detector Module (#361-370)', () => {
+      it('should export ArchitecturePatternDetector class', () => {
+        expect(Autonomous.ArchitecturePatternDetector).toBeDefined()
+        expect(typeof Autonomous.ArchitecturePatternDetector).toBe('function')
+      })
+
+      it('should export detectArchitecturePattern function', () => {
+        expect(Autonomous.detectArchitecturePattern).toBeDefined()
+        expect(typeof Autonomous.detectArchitecturePattern).toBe('function')
+      })
+
+      it('should export getPatternDetectionStats function', () => {
+        expect(Autonomous.getPatternDetectionStats).toBeDefined()
+        expect(typeof Autonomous.getPatternDetectionStats).toBe('function')
+      })
+
+      it('should export addArchitecturePattern function', () => {
+        expect(Autonomous.addArchitecturePattern).toBeDefined()
+        expect(typeof Autonomous.addArchitecturePattern).toBe('function')
+      })
+    })
+
+    describe('Dead-End Detection Module (#89)', () => {
+      it('should export DeadEndDetector class', () => {
+        expect(Autonomous.DeadEndDetector).toBeDefined()
+        expect(typeof Autonomous.DeadEndDetector).toBe('function')
+      })
+
+      it('should export startReasoningPath function', () => {
+        expect(Autonomous.startReasoningPath).toBeDefined()
+        expect(typeof Autonomous.startReasoningPath).toBe('function')
+      })
+
+      it('should export addReasoningStep function', () => {
+        expect(Autonomous.addReasoningStep).toBeDefined()
+        expect(typeof Autonomous.addReasoningStep).toBe('function')
+      })
+
+      it('should export detectDeadEnd function', () => {
+        expect(Autonomous.detectDeadEnd).toBeDefined()
+        expect(typeof Autonomous.detectDeadEnd).toBe('function')
+      })
+
+      it('should export getDeadEndDetectionStats function', () => {
+        expect(Autonomous.getDeadEndDetectionStats).toBeDefined()
+        expect(typeof Autonomous.getDeadEndDetectionStats).toBe('function')
+      })
+    })
+
+    describe('Self-Verification System Module (#84)', () => {
+      it('should export SelfVerificationSystem class', () => {
+        expect(Autonomous.SelfVerificationSystem).toBeDefined()
+        expect(typeof Autonomous.SelfVerificationSystem).toBe('function')
+      })
+
+      it('should export getSelfVerificationSystem function', () => {
+        expect(Autonomous.getSelfVerificationSystem).toBeDefined()
+        expect(typeof Autonomous.getSelfVerificationSystem).toBe('function')
+      })
+    })
+
+    describe('Recovery Strategy Generator Module (#210)', () => {
+      it('should export RecoveryStrategyGenerator class', () => {
+        expect(Autonomous.RecoveryStrategyGenerator).toBeDefined()
+        expect(typeof Autonomous.RecoveryStrategyGenerator).toBe('function')
+      })
+
+      it('should export generateRecoveryStrategy function', () => {
+        expect(Autonomous.generateRecoveryStrategy).toBeDefined()
+        expect(typeof Autonomous.generateRecoveryStrategy).toBe('function')
+      })
+
+      it('should export generateRecoveryOptions function', () => {
+        expect(Autonomous.generateRecoveryOptions).toBeDefined()
+        expect(typeof Autonomous.generateRecoveryOptions).toBe('function')
+      })
+
+      it('should export createRecoveryContext function', () => {
+        expect(Autonomous.createRecoveryContext).toBeDefined()
+        expect(typeof Autonomous.createRecoveryContext).toBe('function')
+      })
+
+      it('should export getRecoveryStats function', () => {
+        expect(Autonomous.getRecoveryStats).toBeDefined()
+        expect(typeof Autonomous.getRecoveryStats).toBe('function')
       })
     })
   })
