@@ -1,0 +1,51 @@
+{
+  "main": "electron/main.js",
+  "scripts": {
+    "electron:dev": "concurrently \"next dev\" \"electron .\"",
+    "electron:build": "next build && electron-builder",
+    "build:win": "next build && electron-builder --win",
+    "build:mac": "next build && electron-builder --mac",
+    "build:linux": "next build && electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.aiappbuilder.studio",
+    "productName": "AI App Builder Studio",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      ".next/**/*",
+      "electron/**/*",
+      "public/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "public/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "public/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "public/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}

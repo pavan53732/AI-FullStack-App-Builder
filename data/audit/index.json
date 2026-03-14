@@ -1,0 +1,20 @@
+[
+  {
+    "id": "audit_mmpbr6rd_ngdce8",
+    "timestamp": "2026-03-13T20:03:40.153Z",
+    "type": "project.create",
+    "action": "Started audit session",
+    "actor": {
+      "type": "ai",
+      "id": "agent-1"
+    },
+    "context": {
+      "projectId": "workspace",
+      "taskId": "autonomous_run"
+    },
+    "result": {
+      "success": true
+    },
+    "hash": "85a12e7c7fb2ef8f"
+  }
+]

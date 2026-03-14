@@ -1,0 +1,869 @@
+==========================================
+[2026-03-12 13:42:23] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.33ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [12.00s]
+==========================================
+[2026-03-12 13:42:35] Completed: bun install
+[LOG] Step: bun install | Duration: 12s
+==========================================
+
+==========================================
+[2026-03-12 13:42:35] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 16ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 71ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-12 13:42:36] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-12 13:42:36] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-12 13:42:36] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-12 13:42:36] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.10.44:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 905ms
+ GET / 200 in 2.9s (compile: 2.7s, render: 191ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 2.9s (compile: 2.8s, render: 129ms)
+[2026-03-12 13:42:41] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 5s
+==========================================
+
+==========================================
+[2026-03-12 13:42:41] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 21ms (compile: 1837µs, render: 19ms)
+[BUN] Health check passed
+==========================================
+[2026-03-12 13:42:41] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-12 13:42:41] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-12 13:42:41] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 325).
+Use 'kill 325' to stop it.
+ GET / 200 in 36ms (compile: 4ms, render: 32ms)
+ GET / 200 in 30ms (compile: 3ms, render: 27ms)
+⚠ Cross origin request detected from preview-chat-7ac3312e-233f-444f-ac8f-996e03385be0.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 31ms (compile: 3ms, render: 28ms)
+ GET / 200 in 29ms (compile: 2ms, render: 27ms)
+ GET / 200 in 30ms (compile: 2ms, render: 27ms)
+ GET / 200 in 29ms (compile: 2ms, render: 27ms)
+ GET / 200 in 28ms (compile: 2ms, render: 26ms)
+ GET / 200 in 23ms (compile: 1852µs, render: 22ms)
+ GET / 200 in 23ms (compile: 1883µs, render: 21ms)
+ GET / 200 in 26ms (compile: 1760µs, render: 24ms)
+ GET / 200 in 38ms (compile: 2ms, render: 35ms)
+ GET / 200 in 25ms (compile: 1974µs, render: 23ms)
+ GET / 200 in 23ms (compile: 2ms, render: 21ms)
+ GET / 200 in 23ms (compile: 1887µs, render: 21ms)
+ GET / 200 in 40ms (compile: 2ms, render: 38ms)
+ GET / 200 in 24ms (compile: 1517µs, render: 22ms)
+ GET / 200 in 26ms (compile: 1666µs, render: 24ms)
+ GET / 200 in 24ms (compile: 1581µs, render: 23ms)
+ GET / 200 in 36ms (compile: 1567µs, render: 34ms)
+ GET / 200 in 21ms (compile: 1618µs, render: 20ms)
+ GET / 200 in 25ms (compile: 1750µs, render: 23ms)
+ GET / 200 in 22ms (compile: 2ms, render: 19ms)
+ GET / 200 in 24ms (compile: 1938µs, render: 22ms)
+ GET / 200 in 25ms (compile: 1790µs, render: 23ms)
+ GET / 200 in 31ms (compile: 3ms, render: 28ms)
+ GET / 200 in 25ms (compile: 2ms, render: 23ms)
+ GET / 200 in 25ms (compile: 2ms, render: 23ms)
+ GET / 200 in 21ms (compile: 1769µs, render: 19ms)
+ GET / 200 in 24ms (compile: 1916µs, render: 22ms)
+ GET / 200 in 22ms (compile: 1969µs, render: 20ms)
+ GET / 200 in 19ms (compile: 1580µs, render: 18ms)
+ GET / 200 in 24ms (compile: 2ms, render: 21ms)
+ GET / 200 in 25ms (compile: 1882µs, render: 23ms)
+ GET / 200 in 23ms (compile: 1995µs, render: 21ms)
+ GET / 200 in 21ms (compile: 1624µs, render: 19ms)
+ GET / 200 in 20ms (compile: 1460µs, render: 18ms)
+ GET / 200 in 27ms (compile: 1799µs, render: 25ms)
+ GET / 200 in 20ms (compile: 1554µs, render: 19ms)
+ GET / 200 in 18ms (compile: 1761µs, render: 16ms)
+ GET / 200 in 28ms (compile: 1779µs, render: 26ms)
+ GET / 200 in 23ms (compile: 1646µs, render: 21ms)
+ GET / 200 in 40ms (compile: 1556µs, render: 39ms)
+ GET / 200 in 20ms (compile: 1698µs, render: 18ms)
+ GET / 200 in 26ms (compile: 5ms, render: 21ms)
+ GET / 200 in 21ms (compile: 1767µs, render: 19ms)
+ GET / 200 in 22ms (compile: 1805µs, render: 20ms)
+ GET / 200 in 24ms (compile: 4ms, render: 20ms)
+ GET / 200 in 28ms (compile: 5ms, render: 24ms)
+ GET / 200 in 22ms (compile: 1941µs, render: 20ms)
+ GET / 200 in 22ms (compile: 1580µs, render: 20ms)
+ GET / 200 in 26ms (compile: 4ms, render: 22ms)
+ GET / 200 in 19ms (compile: 1638µs, render: 18ms)
+⨯ ./src/app/page.tsx:11:1
+Export Mobile doesn't exist in target module
+[0m [90m  9 |[39m [36mimport[39m { [33mSeparator[39m } [36mfrom[39m [32m'@/components/ui/separator'[39m
+ [90m 10 |[39m [36mimport[39m { [33mBadge[39m } [36mfrom[39m [32m'@/components/ui/badge'[39m
+[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   [33mSend[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m   [33mSparkles[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 14 |[39m   [33mCode2[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 15 |[39m   [33mSmartphone[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 16 |[39m   [33mDownload[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 17 |[39m   [33mLoader2[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 18 |[39m   [33mPlus[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 19 |[39m   [33mFolderOpen[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 20 |[39m   [33mTrash2[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 21 |[39m   [33mCopy[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 22 |[39m   [33mCheck[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 23 |[39m   [33mMonitor[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 24 |[39m   [33mTablet[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 25 |[39m   [33mMobile[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 26 |[39m   [33mPlay[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 27 |[39m   [33mSettings[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 28 |[39m   [33mZap[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 29 |[39m   [33mLayoutTemplate[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 30 |[39m   [33mMessageSquare[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 31 |[39m   [33mEye[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 32 |[39m   [33mFileCode[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 33 |[39m   [33mFolder[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 34 |[39m   [33mChevronRight[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 35 |[39m   [33mX[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 36 |[39m } [36mfrom[39m [32m'lucide-react'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 37 |[39m [36mimport[39m { toast } [36mfrom[39m [32m'sonner'[39m
+ [90m 38 |[39m [36mimport[39m { cn } [36mfrom[39m [32m'@/lib/utils'[39m
+ [90m 39 |[39m[0m
+
+The export Mobile was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import Toilet?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+
+./src/app/page.tsx:11:1
+Export Mobile doesn't exist in target module
+[0m [90m  9 |[39m [36mimport[39m { [33mSeparator[39m } [36mfrom[39m [32m'@/components/ui/separator'[39m
+ [90m 10 |[39m [36mimport[39m { [33mBadge[39m } [36mfrom[39m [32m'@/components/ui/badge'[39m
+[31m[1m>[22m[39m[90m 11 |[39m [36mimport[39m { 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 12 |[39m   [33mSend[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 13 |[39m   [33mSparkles[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 14 |[39m   [33mCode2[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 15 |[39m   [33mSmartphone[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 16 |[39m   [33mDownload[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 17 |[39m   [33mLoader2[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 18 |[39m   [33mPlus[39m[33m,[39m 
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 19 |[39m   [33mFolderOpen[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 20 |[39m   [33mTrash2[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 21 |[39m   [33mCopy[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 22 |[39m   [33mCheck[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 23 |[39m   [33mMonitor[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 24 |[39m   [33mTablet[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 25 |[39m   [33mMobile[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 26 |[39m   [33mPlay[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 27 |[39m   [33mSettings[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 28 |[39m   [33mZap[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 29 |[39m   [33mLayoutTemplate[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 30 |[39m   [33mMessageSquare[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 31 |[39m   [33mEye[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 32 |[39m   [33mFileCode[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 33 |[39m   [33mFolder[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 34 |[39m   [33mChevronRight[39m[33m,[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 35 |[39m   [33mX[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+[31m[1m>[22m[39m[90m 36 |[39m } [36mfrom[39m [32m'lucide-react'[39m
+ [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 37 |[39m [36mimport[39m { toast } [36mfrom[39m [32m'sonner'[39m
+ [90m 38 |[39m [36mimport[39m { cn } [36mfrom[39m [32m'@/lib/utils'[39m
+ [90m 39 |[39m[0m
+
+The export Mobile was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import Toilet?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+ GET / 500 in 2.2s (compile: 2.1s, render: 107ms)
+✓ Compiled in 167ms
+ GET / 200 in 289ms (compile: 144ms, render: 145ms)
+prisma:query SELECT `main`.`Project`.`id`, `main`.`Project`.`name`, `main`.`Project`.`description`, `main`.`Project`.`type`, `main`.`Project`.`status`, `main`.`Project`.`iconUrl`, `main`.`Project`.`files`, `main`.`Project`.`packageName`, `main`.`Project`.`version`, `main`.`Project`.`createdAt`, `main`.`Project`.`updatedAt` FROM `main`.`Project` WHERE 1=1 ORDER BY `main`.`Project`.`updatedAt` DESC LIMIT ? OFFSET ?
+ GET /api/projects 200 in 432ms (compile: 382ms, render: 51ms)
+Export error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].build.create()` invocation in
+/home/z/my-project/.next/dev/server/chunks/[root-of-the-server]__2fb47920._.js:85:156
+
+  82 }
+  83 const sanitizedName = (projectName || 'my-app').toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  84 // Create a build record
+→ 85 const build = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].build.create(
+Foreign key constraint violated on the foreign key
+    at <unknown> (src/app/api/export/route.ts:17:34)
+    at async POST (src/app/api/export/route.ts:17:19)
+  15 |
+  16 |     // Create a build record
+> 17 |     const build = await db.build.create({
+     |                                  ^
+  18 |       data: {
+  19 |         type,
+  20 |         status: 'building', {
+  code: 'P2003',
+  meta: [Object],
+  clientVersion: '6.19.2'
+}
+ POST /api/export 500 in 401ms (compile: 106ms, render: 294ms)
+prisma:query INSERT INTO `main`.`Build` (`id`, `type`, `status`, `createdAt`, `projectId`) VALUES (?,?,?,?,?) RETURNING `id` AS `id`, `type` AS `type`, `status` AS `status`, `downloadUrl` AS `downloadUrl`, `logs` AS `logs`, `error` AS `error`, `createdAt` AS `createdAt`, `completedAt` AS `completedAt`, `projectId` AS `projectId`
+ GET / 200 in 67ms (compile: 3ms, render: 63ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Project`.`id`, `main`.`Project`.`name`, `main`.`Project`.`description`, `main`.`Project`.`type`, `main`.`Project`.`status`, `main`.`Project`.`iconUrl`, `main`.`Project`.`files`, `main`.`Project`.`packageName`, `main`.`Project`.`version`, `main`.`Project`.`createdAt`, `main`.`Project`.`updatedAt` FROM `main`.`Project` WHERE 1=1 ORDER BY `main`.`Project`.`updatedAt` DESC LIMIT ? OFFSET ?
+ GET /api/projects 200 in 12ms (compile: 1829µs, render: 10ms)
+ GET / 200 in 45ms (compile: 1873µs, render: 43ms)
+prisma:query SELECT 1
+ GET /api/projects 200 in 8ms (compile: 1676µs, render: 6ms)
+prisma:query SELECT `main`.`Project`.`id`, `main`.`Project`.`name`, `main`.`Project`.`description`, `main`.`Project`.`type`, `main`.`Project`.`status`, `main`.`Project`.`iconUrl`, `main`.`Project`.`files`, `main`.`Project`.`packageName`, `main`.`Project`.`version`, `main`.`Project`.`createdAt`, `main`.`Project`.`updatedAt` FROM `main`.`Project` WHERE 1=1 ORDER BY `main`.`Project`.`updatedAt` DESC LIMIT ? OFFSET ?
+==========================================
+[2026-03-13 03:36:10] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.10ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+658 packages installed [4.09s]
+==========================================
+[2026-03-13 03:36:14] Completed: bun install
+[LOG] Step: bun install | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-13 03:36:14] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 94ms
+
+==========================================
+[2026-03-13 03:36:16] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-13 03:36:16] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-13 03:36:16] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-13 03:36:16] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.3.23:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1091ms
+ GET / 200 in 3.4s (compile: 3.1s, render: 240ms)
+Next.js dev server is ready!
+ GET / 200 in 3.3s (compile: 3.0s, render: 289ms)
+==========================================
+[2026-03-13 03:36:21] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 5s
+==========================================
+
+==========================================
+[2026-03-13 03:36:21] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 55ms (compile: 2ms, render: 52ms)
+[BUN] Health check passed
+==========================================
+[2026-03-13 03:36:21] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-13 03:36:21] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-13 03:36:21] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 285).
+Use 'kill 285' to stop it.
+prisma:query SELECT `main`.`Project`.`id`, `main`.`Project`.`name`, `main`.`Project`.`description`, `main`.`Project`.`type`, `main`.`Project`.`status`, `main`.`Project`.`iconUrl`, `main`.`Project`.`files`, `main`.`Project`.`packageName`, `main`.`Project`.`version`, `main`.`Project`.`createdAt`, `main`.`Project`.`updatedAt` FROM `main`.`Project` WHERE 1=1 ORDER BY `main`.`Project`.`updatedAt` DESC LIMIT ? OFFSET ?
+ GET /api/projects 200 in 430ms (compile: 369ms, render: 61ms)
+ GET / 200 in 54ms (compile: 4ms, render: 51ms)
+==========================================
+[2026-03-13 07:12:05] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.13ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+545 packages installed [3.80s]
+==========================================
+[2026-03-13 07:12:09] Completed: bun install
+[LOG] Step: bun install | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-13 07:12:09] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 126ms
+
+==========================================
+[2026-03-13 07:12:11] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-13 07:12:11] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+[2026-03-13 07:12:11] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-13 07:12:11] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.12.174:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1107ms
+ GET / 200 in 3.4s (compile: 3.2s, render: 225ms)
+Next.js dev server is ready!
+==========================================
+[2026-03-13 07:12:16] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 5s
+==========================================
+
+==========================================
+[2026-03-13 07:12:16] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 41ms (compile: 2ms, render: 39ms)
+[BUN] Health check passed
+==========================================
+[2026-03-13 07:12:16] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-13 07:12:16] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-13 07:12:16] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 293).
+Use 'kill 293' to stop it.
+ GET / 200 in 54ms (compile: 3ms, render: 51ms)
+ GET / 200 in 31ms (compile: 2ms, render: 29ms)
+ GET / 200 in 56ms (compile: 4ms, render: 52ms)
+ GET / 200 in 43ms (compile: 3ms, render: 40ms)
+ GET / 200 in 127ms (compile: 30ms, render: 97ms)
+ GET / 200 in 185ms (compile: 65ms, render: 120ms)
+ GET /api/autonomous 200 in 297ms (compile: 277ms, render: 20ms)
+ GET / 200 in 52ms (compile: 2ms, render: 50ms)
+ GET /api/autonomous 200 in 8ms (compile: 4ms, render: 5ms)
+ GET / 200 in 57ms (compile: 3ms, render: 54ms)
+ GET /api/autonomous 200 in 45ms (compile: 37ms, render: 8ms)
+ GET / 200 in 52ms (compile: 2ms, render: 49ms)
+ GET /api/autonomous 200 in 6ms (compile: 1697µs, render: 4ms)
+ GET / 200 in 39ms (compile: 1637µs, render: 38ms)
+ GET / 200 in 39ms (compile: 1826µs, render: 38ms)
+ GET / 200 in 38ms (compile: 1840µs, render: 37ms)
+ GET / 200 in 39ms (compile: 1749µs, render: 37ms)
+ GET / 200 in 190ms (compile: 69ms, render: 121ms)
+ GET / 200 in 48ms (compile: 3ms, render: 45ms)
+⨯ Error [ChunkLoadError]: Failed to load chunk server/chunks/[root-of-the-server]__02f5bc0c._.js from runtime for chunk server/app/api/autonomous/route.js
+    at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3) {
+  page: '/api/autonomous',
+  [cause]: SyntaxError: Invalid regular expression: /\{[^{}]*"action"\s*:\s*"[^"]+")[^{}]*\}/g: Unmatched ')'
+      at <unknown> (.next/dev/server/chunks/[root-of-the-server]__02f5bc0c._.js:471)
+      at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3)
+}
+ GET /api/autonomous 500 in 1050ms (compile: 948ms, render: 102ms)
+⨯ Error [ChunkLoadError]: Failed to load chunk server/chunks/[root-of-the-server]__02f5bc0c._.js from runtime for chunk server/app/api/autonomous/route.js
+    at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3) {
+  page: '/api/autonomous',
+  [cause]: SyntaxError: Invalid regular expression: /\{[^{}]*"action"\s*:\s*"[^"]+")[^{}]*\}/g: Unmatched ')'
+      at <unknown> (.next/dev/server/chunks/[root-of-the-server]__02f5bc0c._.js:471)
+      at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3)
+}
+ POST /api/autonomous 500 in 121ms (compile: 105ms, render: 15ms)
+ GET / 200 in 49ms (compile: 3ms, render: 46ms)
+⨯ Error [ChunkLoadError]: Failed to load chunk server/chunks/[root-of-the-server]__02f5bc0c._.js from runtime for chunk server/app/api/autonomous/route.js
+    at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3) {
+  page: '/api/autonomous',
+  [cause]: SyntaxError: Invalid regular expression: /\{[^{}]*"action"\s*:\s*"[^"]+")[^{}]*\}/g: Unmatched ')'
+      at <unknown> (.next/dev/server/chunks/[root-of-the-server]__02f5bc0c._.js:471)
+      at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3)
+}
+ GET /api/autonomous 500 in 94ms (compile: 85ms, render: 9ms)
+ GET / 200 in 50ms (compile: 10ms, render: 40ms)
+⨯ Error [ChunkLoadError]: Failed to load chunk server/chunks/[root-of-the-server]__02f5bc0c._.js from runtime for chunk server/app/api/autonomous/route.js
+    at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3) {
+  page: '/api/autonomous',
+  [cause]: SyntaxError: Invalid regular expression: /\{[^{}]*"action"\s*:\s*"[^"]+")[^{}]*\}/g: Unmatched ')'
+      at <unknown> (.next/dev/server/chunks/[root-of-the-server]__02f5bc0c._.js:471)
+      at Object.<anonymous> (.next/dev/server/app/api/autonomous/route.js:3:3)
+}
+ GET /api/autonomous 500 in 69ms (compile: 62ms, render: 7ms)
+ POST /api/autonomous 200 in 5.2s (compile: 70ms, render: 5.1s)
+ GET / 200 in 52ms (compile: 1933µs, render: 50ms)
+ GET / 200 in 214ms (compile: 76ms, render: 139ms)
+ GET / 200 in 52ms (compile: 3ms, render: 49ms)
+ GET /api/autonomous 200 in 12ms (compile: 2ms, render: 10ms)
+ GET /api/autonomous 200 in 7ms (compile: 1893µs, render: 5ms)
+ GET /api/autonomous 200 in 8ms (compile: 3ms, render: 6ms)
+ GET / 200 in 47ms (compile: 1964µs, render: 45ms)
+ GET /api/autonomous 200 in 7ms (compile: 1772µs, render: 5ms)
+==========================================
+[2026-03-13 16:13:29] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.09ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+540 packages installed [3.98s]
+==========================================
+[2026-03-13 16:13:34] Completed: bun install
+[LOG] Step: bun install | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-13 16:13:34] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 129ms
+
+==========================================
+[2026-03-13 16:13:36] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-13 16:13:36] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-13 16:13:36] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-13 16:13:36] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.6.80:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 992ms
+ GET / 200 in 3.4s (compile: 3.2s, render: 197ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 3.1s (compile: 2.9s, render: 272ms)
+[2026-03-13 16:13:40] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+[2026-03-13 16:13:40] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 43ms (compile: 2ms, render: 41ms)
+[BUN] Health check passed
+==========================================
+[2026-03-13 16:13:41] Completed: Health check
+[LOG] Step: Health check | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-13 16:13:41] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-13 16:13:41] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 292).
+Use 'kill 292' to stop it.
+ GET /api/autonomous 200 in 291ms (compile: 273ms, render: 19ms)
+ GET /api/autonomous 200 in 12ms (compile: 5ms, render: 7ms)
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/autonomous 200 in 8ms (compile: 3ms, render: 6ms)
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 8ms (compile: 3ms, render: 5ms)
+ GET /api/autonomous 200 in 9ms (compile: 5ms, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1932µs, render: 4ms)
+ GET /api/autonomous 200 in 7ms (compile: 1932µs, render: 5ms)
+ GET /api/autonomous 200 in 6ms (compile: 1745µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1749µs, render: 5ms)
+ GET /api/autonomous 200 in 6ms (compile: 1851µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1866µs, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1722µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1739µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1952µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 7ms (compile: 1994µs, render: 5ms)
+ GET /api/autonomous 200 in 14ms (compile: 1765µs, render: 12ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 4ms (compile: 1745µs, render: 3ms)
+ GET /api/autonomous 200 in 4ms (compile: 1585µs, render: 3ms)
+ GET /api/autonomous 200 in 4ms (compile: 1750µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1708µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1716µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1921µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1803µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1709µs, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1939µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1889µs, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1688µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1766µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1736µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1666µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1775µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1712µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1676µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1893µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1955µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1730µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1947µs, render: 3ms)
+ GET /api/autonomous 200 in 4ms (compile: 1581µs, render: 3ms)
+ GET /api/autonomous 200 in 4ms (compile: 1623µs, render: 3ms)
+ GET /api/autonomous 200 in 4ms (compile: 1576µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1611µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1633µs, render: 4ms)
+ GET /api/autonomous 200 in 4ms (compile: 1697µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1808µs, render: 3ms)
+ GET / 200 in 56ms (compile: 3ms, render: 53ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+⚠ Cross origin request detected from preview-chat-7ac3312e-233f-444f-ac8f-996e03385be0.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET /api/autonomous 200 in 8ms (compile: 3ms, render: 6ms)
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1879µs, render: 3ms)
+ GET /api/autonomous 200 in 6ms (compile: 1869µs, render: 4ms)
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/autonomous 200 in 6ms (compile: 1637µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1622µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1781µs, render: 4ms)
+ GET /api/autonomous 200 in 6ms (compile: 1812µs, render: 4ms)
+ GET /api/autonomous 200 in 5ms (compile: 1858µs, render: 3ms)
+ GET / 200 in 97ms (compile: 51ms, render: 46ms)
+ GET / 200 in 18ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 14ms (compile: 1814µs, render: 12ms)
+ GET / 200 in 18ms (compile: 3ms, render: 16ms)
+ GET / 200 in 13ms (compile: 1955µs, render: 11ms)
+ GET / 200 in 16ms (compile: 1650µs, render: 14ms)
+ GET / 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 14ms (compile: 1790µs, render: 12ms)
+ GET / 200 in 16ms (compile: 1958µs, render: 14ms)
+ GET / 200 in 20ms (compile: 2ms, render: 17ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 1820µs, render: 12ms)
+ GET / 200 in 17ms (compile: 1919µs, render: 15ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 1807µs, render: 11ms)
+ GET / 200 in 16ms (compile: 1746µs, render: 14ms)
+ GET / 200 in 15ms (compile: 1927µs, render: 13ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 30ms (compile: 2ms, render: 28ms)
+ GET / 200 in 11ms (compile: 1518µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1743µs, render: 11ms)
+ GET /api/autonomous 200 in 44ms (compile: 32ms, render: 11ms)
+✓ Compiled in 202ms
+ GET /api/autonomous 200 in 12ms (compile: 3ms, render: 10ms)
+✓ Compiled in 134ms
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 3ms)
+✓ Compiled in 430ms
+ GET /api/autonomous 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/autonomous 200 in 11ms (compile: 2ms, render: 8ms)
+ GET /api/autonomous 200 in 5ms (compile: 1770µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1803µs, render: 3ms)
+ GET /api/autonomous 200 in 5ms (compile: 1772µs, render: 3ms)
+ GET /api/autonomous 200 in 7ms (compile: 2ms, render: 4ms)

@@ -1,0 +1,80 @@
+// AI App Builder - Prisma Schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Projects created by users
+model Project {
+  id          String     @id @default(cuid())
+  name        String
+  description String?
+  type        String     @default("web") // "web", "pwa", "android"
+  status      String     @default("draft") // "draft", "building", "ready", "error"
+  iconUrl     String?
+  
+  // Generated code storage
+  files       Json?      // Stores file structure as JSON
+  
+  // Capacitor/Android config
+  packageName String?
+  version     String     @default("1.0.0")
+  
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  
+  // Relations
+  messages    Message[]
+  builds      Build[]
+}
+
+// Chat messages for AI conversation
+model Message {
+  id        String   @id @default(cuid())
+  role      String   // "user" or "assistant"
+  content   String
+  
+  createdAt DateTime @default(now())
+  
+  // Relations
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+// Pre-built templates
+model Template {
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  category    String   // "ecommerce", "social", "productivity", "dashboard", "utility"
+  iconUrl     String?
+  previewUrl  String?
+  files       Json     // Template file structure
+  prompt      String   // AI prompt to generate this template
+  isPopular   Boolean  @default(false)
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Build history
+model Build {
+  id          String   @id @default(cuid())
+  type        String   // "pwa", "apk", "aab", "zip"
+  status      String   // "pending", "building", "success", "failed"
+  downloadUrl String?
+  logs        String?
+  error       String?
+  
+  createdAt   DateTime  @default(now())
+  completedAt DateTime?
+  
+  // Relations
+  projectId   String
+  project     Project   @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}

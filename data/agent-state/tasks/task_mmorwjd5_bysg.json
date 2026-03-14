@@ -1,0 +1,33 @@
+{
+  "id": "task_mmorwjd5_bysg",
+  "status": "running",
+  "prompt": "Hi",
+  "projectId": "workspace",
+  "createdAt": "2026-03-13T10:47:57.449Z",
+  "updatedAt": "2026-03-13T10:47:58.268Z",
+  "iteration": 1,
+  "maxIterations": 50,
+  "progress": 2,
+  "totalActions": 1,
+  "successfulActions": 1,
+  "failedActions": 0,
+  "actions": [
+    {
+      "type": "create_folder",
+      "details": {
+        "action": "create_folder",
+        "path": "my-app"
+      },
+      "success": true,
+      "duration": 0,
+      "timestamp": "2026-03-13T10:47:58.066Z"
+    }
+  ],
+  "filesCreated": [],
+  "filesModified": [],
+  "filesDeleted": [],
+  "errors": [],
+  "recoveries": [],
+  "context": {},
+  "startedAt": "2026-03-13T10:47:57.451Z"
+}

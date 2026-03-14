@@ -1,0 +1,14 @@
+{
+  "provider": "custom",
+  "baseUrl": "https://api.kilo.ai/api/openrouter",
+  "apiKey": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmxibllpT2lKd2NtOWtkV04wYVc5dUlpd2lhMmxzYjFWelpYSkpaQ0k2SWpGa1pEWTNNelUxTFRFM05UZ3ROR0U1TUMwNVpUYzRMV1k0TWpsak5UQm1aamsyTXlJc0ltRndhVlJ2YTJWdVVHVndjR1Z5SWpwdWRXeHNMQ0oyWlhKemFXOXVJam96TENKcFlYUWlPakUzTnpNME1qQTVNRFVzSW1WNGNDSTZNVGt6TVRFd01Ea3dOWDAuOVZsTG54cEVBTklnMlRuczhCcWtKMjd0YmhYVk80bHFtcDV2eVU5UlNXOA==",
+  "model": "x-ai/grok-code-fast-1:optimized:free",
+  "maxTokens": 4096,
+  "temperature": 0.7,
+  "topP": 1,
+  "streamEnabled": true,
+  "timeout": 60000,
+  "createdAt": "2026-03-13T16:59:02.881Z",
+  "updatedAt": "2026-03-13T20:03:36.605Z",
+  "hasApiKey": true
+}
