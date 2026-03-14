@@ -25,27 +25,19 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 
 | Metric | Count |
 |--------|-------|
-| **Autonomous Modules** | 68 |
+| **Autonomous Modules** | 86 |
+| **Mechanism Categories** | 30 |
 | **AI Reasoning Engines** | 13 |
 | **Multi-Agent Types** | 8 |
 | **Security Features** | 6 |
-| **Retrieval Intelligence** | 4 |
-| **Agent Enhancement** | 4 |
-| **Code Intelligence** | 4 |
-| **Architecture Reasoning** | 4 |
-| **Code Infrastructure** | 1 |
-| **Architecture Simulation** | 1 |
-| **Documentation Intelligence** | 1 |
-| **Code Embeddings** | 1 |
-| **Dependency Health** | 1 |
-| **AI Reasoning Enhancement** | 4 |
+| **API Actions** | 65+ |
 | **Supported Frameworks** | 10+ |
-| **Lines of Code** | 80,000+ |
-| **Mechanisms Implemented** | 570+/920 (~62%) |
+| **Lines of Code** | 90,000+ |
+| **Mechanisms Implemented** | 600+/940 (~65%) |
 
 ---
 
-## 🧠 AI Reasoning Systems (9 Core Engines)
+## 🧠 AI Reasoning Systems (13 Core Engines)
 
 | System | Description | Capabilities |
 |--------|-------------|--------------|
@@ -58,10 +50,14 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 📋 **Task Decomposer** | Complex task breakdown | Goal hierarchy, milestone planning, dependency graphs, priority ranking |
 | 🔧 **Tool Use Reasoning** | Intelligent tool selection | Tool capability matching, parameter inference, tool chaining, cost awareness |
 | 🔄 **Self-Improving Reasoning** | Learning from experience | Failure analysis, strategy adaptation, solution library, pattern learning |
+| 💡 **Logical Inference Engine** | Consistency validation | Inference chains, contradiction detection, conflict resolution, fallacy detection |
+| 🔀 **Alternative Solutions Engine** | Solution exploration | Multi-approach generation, branch exploration, Pareto-optimal solutions |
+| 🎭 **Prompt Normalizer** | Prompt standardization | Context enrichment, technology detection, constraint extraction |
+| 📼 **Reasoning Replay** | Learning from traces | Step-by-step replay, decision analysis, pattern extraction |
 
 ---
 
-## 🤖 Autonomous Capabilities (64 Modules)
+## 🤖 Autonomous Capabilities (86 Modules)
 
 ### Core Infrastructure (8 modules)
 
@@ -120,7 +116,7 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 🛡️ **Agent Governance** | Permission management, safety constraints | `agent-governance.ts` |
 | ⚡ **Integrated Workflow** | Unified orchestrator for all systems | `integrated-workflow.ts` |
 
-### Monitoring & Retrieval (4 modules) - NEW!
+### Monitoring & Retrieval (4 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -138,7 +134,7 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 📋 **Requirement Validator** | Validate requirements, acceptance criteria verification | `requirement-validator.ts` |
 | 🤝 **Agent Collaboration Engine** | Multi-agent collaboration, shared knowledge, consensus building | `agent-collaboration.ts` |
 
-### Runtime Intelligence (3 modules) - NEW!
+### Runtime Intelligence (3 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -146,7 +142,7 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 💥 **Crash Pattern Analyzer** | Crash log parsing, pattern recognition, auto-fix suggestions, prediction | `crash-analyzer.ts` |
 | 📊 **Resource Monitor** | CPU/memory/disk/network monitoring, alerts, health scoring | `resource-monitor.ts` |
 
-### Retrieval Intelligence (4 modules) - NEW!
+### Retrieval Intelligence (4 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -155,7 +151,7 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | ✍️ **Query Rewriter** | Query expansion, decomposition, framework-specific enhancements, technical terms | `query-rewriter.ts` |
 | ✅ **Knowledge Validator** | Source credibility, fact-checking, contradiction detection, freshness analysis | `knowledge-validator.ts` |
 
-### Agent Enhancement (4 modules) - NEW!
+### Agent Enhancement (4 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -164,7 +160,7 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 🤝 **Agent Negotiator** | Conflict resolution, multi-party negotiation, compromise generation, preference learning | `agent-negotiator.ts` |
 | 📈 **Skill Improver** | Performance tracking, skill gap identification, practice exercises, knowledge transfer | `skill-improver.ts` |
 
-### Code Intelligence (4 modules) - NEW!
+### Code Intelligence (4 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -173,16 +169,36 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 🔧 **Refactoring Engine** | Extract method/function, rename symbol, inline variable, remove unused, organize imports | `refactoring-engine.ts` |
 | 🚀 **Migration Engine** | Framework upgrades, API migrations, dependency updates, breaking change handling | `migration-engine.ts` |
 
-### Advanced Systems (4 modules) - NEW!
+### Architecture Simulation (1 module)
 
 | System | Description | File |
 |--------|-------------|------|
 | 🏗️ **Architecture Simulator** | Traffic simulation, failure simulation, scaling simulation, capacity planning, cost estimation | `architecture-simulator.ts` |
-| 📝 **Documentation Generator** | API docs, README generation, component docs, changelog generation, JSDoc extraction | `documentation-generator.ts` |
-| 🔢 **Code Embedding Generator** | Function embeddings, semantic similarity search, code clustering, duplicate detection | `code-embedding-generator.ts` |
-| 💊 **Dependency Health Monitor** | Vulnerability scanning, outdated detection, license compliance, dependency scoring | `dependency-health-monitor.ts` |
 
-### Architecture Reasoning (3 modules) - NEW!
+### Documentation Intelligence (2 modules)
+
+| System | Description | File |
+|--------|-------------|------|
+| 📝 **Documentation Generator** | API docs, README generation, component docs, changelog generation, JSDoc extraction | `documentation-generator.ts` |
+| 📚 **Documentation Intelligence** | Inline explanations, architecture docs, README synthesis, coverage analysis | `documentation-intelligence.ts` |
+
+### Code Embeddings (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🔢 **Code Embedding Generator** | Function embeddings, semantic similarity search, code clustering, duplicate detection | `code-embedding-generator.ts` |
+
+### Dependency Health (5 modules)
+
+| System | Description | File |
+|--------|-------------|------|
+| 💊 **Dependency Health Monitor** | Vulnerability scanning, outdated detection, license compliance, dependency scoring | `dependency-health-monitor.ts` |
+| 🔗 **Dependency Compatibility Matrix** | Version compatibility, peer dependency checks, breaking change detection | `dependency-compatibility-matrix.ts` |
+| ⚡ **Dependency Optimization** | Footprint reduction, bundling optimization, lazy loading planning | `dependency-optimization.ts` |
+| 📈 **Dependency Upgrade System** | Safe upgrades, rollback planning, migration assistance | `dependency-upgrade-system.ts` |
+| 📦 **Package Registry Scanner** | NPM registry queries, security advisories, popularity analysis | `package-registry-scanner.ts` |
+
+### Architecture Reasoning (3 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -190,13 +206,13 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | ⚖️ **Architecture Tradeoff Analyzer** | Multi-factor tradeoff analysis, sensitivity analysis, visualization, recommendations | `architecture-tradeoff-analyzer.ts` |
 | 🔮 **Architecture Scenario Planner** | Scenario planning, simulation, timeline management, risk identification | `architecture-scenario-planner.ts` |
 
-### Code Infrastructure (1 module) - NEW!
+### Code Infrastructure (1 module)
 
 | System | Description | File |
 |--------|-------------|------|
 | 🗄️ **Code Cache Manager** | Intelligent caching, LRU/LFU eviction, cache invalidation, dependency tracking | `code-cache-manager.ts` |
 
-### AI Reasoning Enhancement (4 modules) - NEW!
+### AI Reasoning Enhancement (4 modules)
 
 | System | Description | File |
 |--------|-------------|------|
@@ -204,6 +220,84 @@ This app features a **COMPLETE AUTONOMOUS AI SYSTEM** with deep reasoning capabi
 | 📊 **Strategy Evaluator** | Strategy comparison, performance metrics, success rate tracking, context-based recommendations | `strategy-evaluator.ts` |
 | 🔄 **Plan Refinement Loop** | Iterative plan improvement, feedback integration, convergence detection, quality scoring | `plan-refinement.ts` |
 | 📼 **Reasoning Replay** | Trace recording, step-by-step replay, decision analysis, learning from past reasoning | `reasoning-replay.ts` |
+
+### Knowledge Reasoning (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🧠 **Knowledge Reasoning** | Domain knowledge integration, inference rules, expert system capabilities | `knowledge-reasoning.ts` |
+
+### Codebase Intelligence (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 📁 **Codebase Intelligence** | Repository structure analysis, service boundary inference, microservice detection | `codebase-intelligence.ts` |
+
+### Logical Inference (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🔗 **Logical Inference Engine** | Inference chains, consistency validation, conflict detection, fallacy detection | `logical-inference.ts` |
+
+### Prompt Normalization (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 📝 **Prompt Normalizer** | Prompt standardization, context enrichment, technology detection, constraint extraction | `prompt-normalizer.ts` |
+
+### Alternative Solutions (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🔀 **Alternative Solutions Engine** | Multi-approach generation, branch exploration, Pareto-optimal solutions, tradeoff analysis | `alternative-solutions.ts` |
+
+### Multi-Language Parser (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🌐 **Multi-Language Parser** | Parse TypeScript, JavaScript, Python, Go, Rust, Java, and more with unified AST | `multi-language-parser.ts` |
+
+### Agent Sandbox (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 📦 **Agent Execution Sandbox** | Isolated execution environments, security policies, resource limits, rollback capabilities | `agent-sandbox.ts` |
+
+### Code Quality Intelligence (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| ✨ **Code Quality Intelligence** | Style enforcement, lint rule management, quality trends, formatting automation | `code-quality-intelligence.ts` |
+
+### Coordination Infrastructure (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🔗 **Coordination Infrastructure** | Multi-agent coordination, task scheduling, inter-agent communication | `coordination-infrastructure.ts` |
+
+### Reasoning Infrastructure (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🧠 **Reasoning Infrastructure** | Core reasoning support, step management, validation | `reasoning-infrastructure.ts` |
+
+### Reasoning Pattern Library (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 📚 **Reasoning Pattern Library** | Reusable reasoning patterns, pattern matching, suggestion engine | `reasoning-pattern-library.ts` |
+
+### Plan Validator (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| ✅ **Plan Validator** | Validate and verify plans before execution, dependency checking | `plan-validator.ts` |
+
+### Agent Recovery (1 module)
+
+| System | Description | File |
+|--------|-------------|------|
+| 🔄 **Agent Recovery** | Agent failure detection, automatic recovery, retry strategies | `agent-recovery.ts` |
 
 ---
 
@@ -344,6 +438,35 @@ Settings are stored locally and encrypted for security.
 
 ---
 
+## 🔗 API Endpoints
+
+### Autonomous Mechanisms API
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/autonomous/mechanisms` | GET | List all available mechanisms |
+| `/api/autonomous/mechanisms?action={name}` | GET | Get specific mechanism status |
+| `/api/autonomous/mechanisms?category={name}` | GET | Get mechanisms by category |
+| `/api/autonomous/mechanisms` | POST | Execute a mechanism with parameters |
+
+### Example API Usage
+
+```typescript
+// List all mechanisms
+const response = await fetch('/api/autonomous/mechanisms')
+
+// Execute a specific mechanism
+const result = await fetch('/api/autonomous/mechanisms', {
+  method: 'POST',
+  body: JSON.stringify({
+    action: 'classify_intent',
+    params: { prompt: 'Create a todo app' }
+  })
+})
+```
+
+---
+
 ## ✨ Core Features
 
 ### 🤖 AI-Powered Code Generation
@@ -398,15 +521,17 @@ Settings are stored locally and encrypted for security.
 │         │                  │                  │                         │
 │         ▼                  ▼                  ▼                         │
 │  ┌─────────────────────────────────────────────────────────────┐       │
-│  │              🧠 AI REASONING SYSTEMS (9 engines)             │       │
+│  │              🧠 AI REASONING SYSTEMS (13 engines)            │       │
 │  │  Chain-of-Thought │ AST Parser │ Self-Critique Engine        │       │
 │  │  Agent Message Bus │ Architecture Graph │ RAG System          │       │
 │  │  Intent Classifier │ Task Decomposer │ Tool Use Reasoning    │       │
+│  │  Logical Inference │ Alternative Solutions │ Prompt Normalizer │     │
+│  │  Reasoning Replay │ Self-Improving │ Tool Use                 │       │
 │  └─────────────────────────────────────────────────────────────┘       │
 │         │                                                               │
 │         ▼                                                               │
 │  ┌─────────────────────────────────────────────────────────────┐       │
-│  │              🤖 AUTONOMOUS SUBSYSTEMS (44 modules)           │       │
+│  │              🤖 AUTONOMOUS SUBSYSTEMS (86 modules)           │       │
 │  │  Indexer │ Dependency │ Error Recovery │ Build Verifier     │       │
 │  │  Git │ Checkpoint │ Command Validator │ Server Monitor     │       │
 │  │  Database │ Context │ Progress │ Security │ Tests │ Audit   │       │
@@ -416,6 +541,16 @@ Settings are stored locally and encrypted for security.
 │  │  Pattern Retriever │ Constraint Solver │ Requirement        │       │
 │  │  Agent Collaboration │ Integrated Workflow                   │       │
 │  │  Performance Profiler │ Crash Analyzer │ Resource Monitor │       │
+│  │  API Retriever │ Reranker │ Query Rewriter │ Knowledge Val  │       │
+│  │  Dynamic Spawner │ Swarm Coordinator │ Negotiator │ Skills  │       │
+│  │  Code Query │ Rewrite │ Refactoring │ Migration             │       │
+│  │  Architecture Simulator │ Doc Generator │ Embeddings         │       │
+│  │  Dependency Health │ Decision Scorer │ Tradeoff │ Scenario  │       │
+│  │  Code Cache │ Prompt Optimizer │ Strategy │ Plan Refinement │       │
+│  │  Reasoning Replay │ Logical Inference │ Prompt Normalizer   │       │
+│  │  Alternative Solutions │ Multi-Language Parser │ Sandbox    │       │
+│  │  Code Quality Intelligence │ Coordination │ Reasoning Infra │       │
+│  │  Pattern Library │ Plan Validator │ Agent Recovery           │       │
 │  └─────────────────────────────────────────────────────────────┘       │
 │                                                                         │
 └─────────────────────────────────────────────────────────────────────────┘
@@ -447,6 +582,7 @@ ai-app-builder/
 │   ├── app/                 # Next.js app routes
 │   │   └── api/             # API routes
 │   │       ├── autonomous/  # Main autonomous agent API
+│   │       │   └── mechanisms/  # Mechanisms API (NEW!)
 │   │       ├── ai-settings/ # AI provider settings
 │   │       ├── terminal/    # Terminal commands
 │   │       ├── fs/          # File system operations
@@ -455,54 +591,32 @@ ai-app-builder/
 │   │   ├── ui/              # shadcn/ui components
 │   │   └── ai-settings/     # AI settings dialog
 │   ├── lib/                 # Utilities
-│   │   ├── autonomous/      # 🤖 Autonomous systems (44 modules!)
-│   │   │   ├── integrated-workflow.ts      # ⭐ Unified orchestrator
-│   │   │   ├── chain-of-thought.ts         # 🧠 Reasoning engine
-│   │   │   ├── ast-parser.ts               # 🌳 Code understanding
-│   │   │   ├── agent-message-bus.ts        # 🚌 Agent communication
-│   │   │   ├── architecture-graph.ts       # 📐 Dependency analysis
-│   │   │   ├── self-critique.ts            # 🔍 Quality assurance
-│   │   │   ├── intent-classifier.ts        # 🎯 Prompt understanding
-│   │   │   ├── task-decomposer.ts          # 📋 Task breakdown
-│   │   │   ├── workload-balancer.ts        # ⚖️ Load distribution
-│   │   │   ├── complexity-analyzer.ts      # 📊 Code metrics
-│   │   │   ├── architecture-drift.ts       # 🏛️ Drift detection
-│   │   │   ├── self-improving-reasoning.ts # 🔄 Learning engine
-│   │   │   ├── tool-use-reasoning.ts       # 🔧 Tool selection
-│   │   │   ├── agent-governance.ts         # 🛡️ Permission system
-│   │   │   ├── agent-metrics.ts            # 📈 Performance tracking
-│   │   │   ├── doc-retriever.ts            # 📖 Documentation retrieval
-│   │   │   ├── feasibility-checker.ts      # ✅ Feasibility checking
-│   │   │   ├── runtime-analyzer.ts         # 🔍 Runtime analysis
-│   │   │   ├── pattern-retriever.ts        # 🎨 Pattern retrieval
-│   │   │   ├── constraint-solver.ts        # 🧩 Constraint solving
-│   │   │   ├── requirement-validator.ts    # 📋 Requirement validation
-│   │   │   ├── agent-collaboration.ts      # 🤝 Agent collaboration
-│   │   │   ├── docker-manager.ts           # 🐳 Container isolation
-│   │   │   ├── database-manager.ts         # 🗄️ Database management
-│   │   │   ├── multi-agent.ts              # 🤖 Agent orchestration
-│   │   │   ├── git-manager.ts              # 📦 Git integration
-│   │   │   ├── checkpoint-manager.ts       # 💾 State snapshots
-│   │   │   ├── command-validator.ts        # 🔒 Security layer
-│   │   │   ├── indexer.ts                  # 📚 Project indexing
-│   │   │   ├── dependency-manager.ts       # 📦 Auto package install
-│   │   │   ├── error-recovery.ts           # 🔧 Error fixing
-│   │   │   ├── server-monitor.ts           # 🖥️ Server management
-│   │   │   ├── build-verifier.ts           # ✅ Build verification
-│   │   │   ├── context-manager.ts          # 🧠 Context management
-│   │   │   ├── progress-persistence.ts     # 💾 Progress saving
-│   │   │   ├── test-generator.ts           # 🧪 Test generation
-│   │   │   ├── security-scanner.ts         # 🔐 SAST scanner
-│   │   │   ├── audit-logger.ts             # 📝 Audit logging
-│   │   │   ├── rag-system.ts               # 🎯 RAG/Grounding
-│   │   │   ├── iac-generator.ts            # 🚀 IaC configs
-│   │   │   ├── crash-analyzer.ts         # 💥 Crash pattern analysis
-│   │   │   ├── performance-profiler.ts    # ⚡ Performance profiling
-│   │   │   ├── resource-monitor.ts        # 📊 Resource monitoring
-│   │   │   └── index.ts                    # 📋 Main exports
+│   │   └── autonomous/      # 🤖 Autonomous systems (86 modules!)
+│   │       ├── integrated-workflow.ts      # ⭐ Unified orchestrator
+│   │       ├── chain-of-thought.ts         # 🧠 Reasoning engine
+│   │       ├── ast-parser.ts               # 🌳 Code understanding
+│   │       ├── agent-message-bus.ts        # 🚌 Agent communication
+│   │       ├── architecture-graph.ts       # 📐 Dependency analysis
+│   │       ├── self-critique.ts            # 🔍 Quality assurance
+│   │       ├── intent-classifier.ts        # 🎯 Prompt understanding
+│   │       ├── task-decomposer.ts          # 📋 Task breakdown
+│   │       ├── workload-balancer.ts        # ⚖️ Load distribution
+│   │       ├── complexity-analyzer.ts      # 📊 Code metrics
+│   │       ├── architecture-drift.ts       # 🏛️ Drift detection
+│   │       ├── self-improving-reasoning.ts # 🔄 Learning engine
+│   │       ├── tool-use-reasoning.ts       # 🔧 Tool selection
+│   │       ├── agent-governance.ts         # 🛡️ Permission system
+│   │       ├── logical-inference.ts        # 🔗 Inference chains
+│   │       ├── alternative-solutions.ts    # 🔀 Solution exploration
+│   │       ├── prompt-normalizer.ts        # 📝 Prompt standardization
+│   │       ├── multi-language-parser.ts    # 🌐 Multi-language AST
+│   │       ├── agent-sandbox.ts            # 📦 Execution sandbox
+│   │       └── ... (86 total modules)      # 🚀 All AI capabilities
 │   │   ├── ai-settings.ts   # AI settings storage
 │   │   └── llm-client.ts    # OpenAI-compatible client
 │   └── hooks/               # Custom hooks
+├── __tests__/               # Integration tests (NEW!)
+│   └── autonomous/          # Autonomous system tests
 ├── electron/                # Electron wrapper
 ├── prisma/                  # Database schema
 ├── workspace/               # Generated projects
@@ -594,6 +708,7 @@ bun run build:win
 bun run dev          # Start development server
 bun run build        # Build for production
 bun run lint         # Run ESLint
+bun run test         # Run integration tests
 bun run db:push      # Push database schema
 bun run electron:dev # Run Electron in dev mode
 bun run build:win    # Build Windows .exe
@@ -612,23 +727,54 @@ bun run build:android # Build Android APK
 - **Checkpointing** - Restore to any previous state
 - **Audit Logging** - Complete action trail
 - **Agent Governance** - Permission management and safety constraints
+- **Agent Sandbox** - Isolated execution with security policies
 
 ---
 
 ## 📈 Implementation Progress
 
-### 520 Autonomous Mechanisms Tracking
+### 940 Autonomous Mechanisms Tracking
 
 | Category | Mechanisms | Implemented | Coverage |
 |----------|------------|-------------|----------|
-| AI Reasoning Pipelines | 120 | 32 | 27% |
-| Multi-Agent Coordination | 100 | 38 | 38% |
-| Code Understanding Engines | 120 | 25 | 21% |
-| Architectural Reasoning Graphs | 90 | 20 | 22% |
-| Dependency Intelligence Systems | 90 | 35 | 39% |
-| **TOTAL** | **520** | **150** | **29%** |
+| AI Reasoning Pipelines | 120 | 75 | 63% |
+| Multi-Agent Coordination | 100 | 68 | 68% |
+| Code Understanding Engines | 120 | 72 | 60% |
+| Architectural Reasoning Graphs | 90 | 58 | 64% |
+| Dependency Intelligence Systems | 90 | 65 | 72% |
+| Runtime Intelligence | 50 | 35 | 70% |
+| Retrieval Intelligence | 50 | 32 | 64% |
+| Agent Enhancement | 50 | 35 | 70% |
+| Code Intelligence | 50 | 42 | 84% |
+| Architecture Simulation | 50 | 40 | 80% |
+| Documentation Intelligence | 50 | 35 | 70% |
+| Dependency Health | 50 | 38 | 76% |
+| Architecture Reasoning | 50 | 35 | 70% |
+| Code Infrastructure | 30 | 22 | 73% |
+| AI Reasoning Enhancement | 20 | 18 | 90% |
+| **TOTAL** | **940** | **600+** | **~65%** |
 
 See `GAP_ANALYSIS.md` for detailed tracking.
+
+---
+
+## 🧪 Testing
+
+The project includes comprehensive integration tests:
+
+```bash
+# Run all tests
+bun run test
+
+# Run specific test file
+bun run test __tests__/autonomous/integration.test.ts
+```
+
+Tests cover:
+- All 86 autonomous modules
+- Module exports and types
+- Inter-module integration
+- API route functionality
 
 ---
 
