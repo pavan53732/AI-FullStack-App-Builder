@@ -1559,6 +1559,182 @@ export {
   type RecoveryStats
 } from './recovery-strategies'
 
+// Knowledge Fusion Engine (NEW) - Mechanism #38
+export {
+  KnowledgeFusionEngine,
+  getKnowledgeFusionEngine,
+  fuseKnowledge,
+  type KnowledgeSource,
+  type KnowledgeItem,
+  type KnowledgeType,
+  type KnowledgeRelationship,
+  type FusionConflict,
+  type ConflictResolution,
+  type FusionResult,
+  type FusionStatistics,
+  type KnowledgeGraph,
+  type KnowledgeNode,
+  type KnowledgeEdge,
+  type FusionConfig
+} from './knowledge-fusion-engine'
+
+// Source Attribution Generator (NEW) - Mechanism #57
+export {
+  SourceAttributionGenerator,
+  getSourceAttributionGenerator,
+  generateAttributions,
+  createSource,
+  type Source,
+  type SourceType,
+  type Attribution,
+  type ContributionType,
+  type SourceLocation,
+  type AttributionResult,
+  type Citation,
+  type CitationFormat,
+  type ProvenanceNode,
+  type AttributionConfig
+} from './source-attribution-generator'
+
+// Memory Retrieval Prioritizer (NEW) - Mechanism #39
+export {
+  MemoryRetrievalPrioritizer,
+  getMemoryPrioritizer,
+  prioritizeMemoryRetrieval,
+  createMemory,
+  type MemoryItem,
+  type MemoryType,
+  type RetrievalContext,
+  type PrioritizedMemory,
+  type RetrievalResult,
+  type RetrievalStrategy,
+  type MemoryStatistics,
+  type DecayConfig
+} from './memory-retrieval-prioritizer'
+
+// Context Expansion Trigger (NEW) - Mechanism #40
+export {
+  ContextExpansionTriggerEngine,
+  getContextExpansionTrigger,
+  checkContextExpansion,
+  type ExpansionTrigger,
+  type TriggerType,
+  type ContextSource,
+  type SourceType,
+  type ExpansionResult,
+  type ContextChunk,
+  type ExpansionStrategy,
+  type TriggerConfig,
+  type TriggerThresholds
+} from './context-expansion-trigger'
+
+// Verification Prompt Generator (NEW) - Mechanism #58
+export {
+  VerificationPromptGenerator,
+  getVerificationPromptGenerator,
+  generateVerificationPrompts,
+  verifyOutput,
+  type VerificationPrompt,
+  type VerificationType,
+  type VerificationCategory,
+  type VerificationResult,
+  type VerificationIssue,
+  type PromptGenerationConfig
+} from './verification-prompt-generator'
+
+// Error Probability Estimator (NEW) - Mechanism #59
+export {
+  ErrorProbabilityEstimator,
+  getErrorProbabilityEstimator,
+  estimateErrorProbability,
+  type ErrorProbability,
+  type ErrorType,
+  type RiskFactor,
+  type ErrorEstimationResult,
+  type HistoricalContext,
+  type ErrorPattern,
+  type EstimationConfig
+} from './error-probability-estimator'
+
+// Result Acceptance Scorer (NEW) - Mechanism #60
+export {
+  ResultAcceptanceScorer,
+  getResultAcceptanceScorer,
+  scoreAcceptance,
+  type AcceptanceScore,
+  type DimensionScore,
+  type ScoringDimension,
+  type AcceptanceIssue,
+  type ScoringThresholds,
+  type ScoringConfig
+} from './result-acceptance-scorer'
+
+// Reasoning Trace Visualizer (NEW) - Mechanism #116
+export {
+  ReasoningTraceVisualizer,
+  getReasoningTraceVisualizer,
+  visualizeTrace,
+  type ReasoningTrace,
+  type ReasoningStep,
+  type StepType,
+  type ReasoningBranch,
+  type ReasoningDecision,
+  type DecisionOption,
+  type ReasoningOutcome,
+  type VisualizationOptions
+} from './reasoning-trace-visualizer'
+
+// Supply Chain Verifier (NEW) - Mechanism #498
+export {
+  SupplyChainVerifier,
+  getSupplyChainVerifier,
+  verifySupplyChain,
+  type SupplyChainVerification,
+  type PackageVerification,
+  type IntegrityCheck,
+  type TrustAssessment,
+  type TrustFactor,
+  type TrustFlag,
+  type VulnerabilityInfo,
+  type VerificationSummary,
+  type SBOM,
+  type SBOMComponent,
+  type SBOMDependency,
+  type VerificationConfig
+} from './supply-chain-verifier'
+
+// Code Insight Dashboard (NEW) - Mechanism #327
+export {
+  CodeInsightDashboard,
+  getCodeInsightDashboard,
+  generateDashboard,
+  type DashboardInsight,
+  type InsightCategory,
+  type DashboardData,
+  type CodeMetrics,
+  type ChartData,
+  type ChartPoint,
+  type DashboardAlert,
+  type DashboardConfig
+} from './code-insight-dashboard'
+
+// Architecture Visualizer (NEW) - Mechanism #407
+export {
+  ArchitectureVisualizer,
+  getArchitectureVisualizer,
+  visualizeArchitecture,
+  type ArchitectureVisualization,
+  type VisualizationType,
+  type VisualNode,
+  type NodeType,
+  type VisualEdge,
+  type EdgeType,
+  type EdgeStyle,
+  type VisualGroup,
+  type LayoutOptions,
+  type VisualizationOptions
+} from './architecture-visualizer'
+
 /**
  * Initialize all autonomous subsystems
  */
